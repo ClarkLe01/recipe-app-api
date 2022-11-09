@@ -23,6 +23,7 @@ class UserManager(BaseUserManager):
 
         return user
 
+
 # Create your models here.
 class User(AbstractBaseUser, PermissionsMixin):
     """User in the system"""
@@ -34,4 +35,3 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
-
